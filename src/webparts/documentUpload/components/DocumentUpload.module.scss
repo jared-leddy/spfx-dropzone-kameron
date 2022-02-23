@@ -1,0 +1,99 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.documentUpload {
+  background-color: #fff;
+  padding: 20px;
+
+  .dropZone {
+    text-align: center;
+    min-height: 300px;
+    border: 1px dashed $ms-color-themePrimary;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+    .zones {
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+
+      .dnd {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .files {
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px;
+
+        .pill {
+          padding: 5px 10px;
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .1);
+          border: 1px solid #e3e3e3;
+          justify-content: space-between;
+          border-radius: 3px;
+
+          i {
+            margin-left: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .fields {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .libraries {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    .messages {
+      max-height: 150px;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+
+      &::-webkit-scrollbar-track {
+        box-shadow: none;
+        background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $ms-color-themeLighter;
+        outline: 1px solid transparent;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  .submit {
+    text-align: center;
+
+    .buttons {
+      button {
+        margin: 20px 10px 0 10px;
+      }
+    }
+  }
+}
