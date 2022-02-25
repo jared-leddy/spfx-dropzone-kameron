@@ -16,6 +16,6 @@
     }
   },
   "paths": {
-    "zippedPackage": "solution/spfx-dropzone.sppkg"
+    "zippedPackage": "solution/rm-tool-dropzone.sppkg"
   }
 }
