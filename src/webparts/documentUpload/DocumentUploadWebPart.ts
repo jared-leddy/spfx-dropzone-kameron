@@ -118,10 +118,10 @@ export default class DocumentUploadWebPart extends BaseClientSideWebPart<IDocume
             const web: IWeb = Web(this.properties.webUrl);
             web.lists.getByTitle(lib.Title).currentUserHasPermissions(PermissionKind.AddListItems)
               .then((hasPermission: boolean) => {
-                if (hasPermission) {
+                // if (hasPermission) {
+                //   this.librariesWithPermissions.push(lib.Title);
+                // }
                   this.librariesWithPermissions.push(lib.Title);
-                }
-
                 this.render();
               });
           });
