@@ -1,6 +1,6 @@
 {
-  "name": "spfx-dropzone",
-  "version": "0.0.1",
+  "name": "spfx-rm-dropzone",
+  "version": "1.0.0",
   "private": true,
   "main": "lib/index.js",
   "scripts": {
